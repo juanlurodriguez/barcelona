@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { 
   Linkedin, 
@@ -20,7 +20,7 @@ import {
   X
 } from "lucide-react";
 
-const FadeUp = ({ children, delay = 0 }: { children: React.ReactNode, delay?: number }) => (
+const FadeUp: React.FC<{ children: React.ReactNode, delay?: number }> = ({ children, delay = 0 }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -31,13 +31,13 @@ const FadeUp = ({ children, delay = 0 }: { children: React.ReactNode, delay?: nu
   </motion.div>
 );
 
-const SectionLabel = ({ children }: { children: React.ReactNode }) => (
+const SectionLabel: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <span className="section-label">
     {children}
   </span>
 );
 
-const SectionTitle = ({ children, light = false }: { children: React.ReactNode, light?: boolean }) => (
+const SectionTitle: React.FC<{ children: React.ReactNode, light?: boolean }> = ({ children, light = false }) => (
   <h2 className={`section-title ${light ? 'text-prestige-bg' : 'text-prestige-ink'}`}>
     {children}
   </h2>
@@ -58,7 +58,7 @@ export default function App() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-8 md:px-12 flex justify-between items-center bg-prestige-bg/95 backdrop-blur-md border-b border-prestige-divider transition-all duration-300">
         <div className="flex flex-col">
-          <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-prestige-ink/40 mb-1">Consultoría Estratégica</span>
+          <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-prestige-ink/40 mb-1">BIENESTAR CORPORATIVO · MALLORCA</span>
           <a href="#hero" className="font-serif text-xl tracking-tight text-prestige-ink hover:text-prestige-blue transition-colors">
             Juan Luis Rodríguez
           </a>
@@ -130,7 +130,7 @@ export default function App() {
                 Bienestar corporativo integral y <span className="italic">cohesión</span> de equipos.
               </h1>
               <p className="text-lg md:text-xl text-prestige-ink/70 font-light leading-relaxed mb-10 max-w-xl">
-                Ayudo a las organizaciones a cuidar de sus personas, mejorar su rendimiento y construir equipos humanos más fuertes. Basado en Mallorca, con un enfoque práctico, humano y a medida.
+                Ayudo a empresas a mejorar la salud, la cohesión y el rendimiento de sus equipos. Con un enfoque práctico, humano y sin complicaciones.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
@@ -167,25 +167,33 @@ export default function App() {
           
           <div className="lg:col-span-5 bg-white/30 flex flex-col items-stretch">
             <div className="flex-1 flex flex-col p-12 lg:p-20 justify-center">
-              <FadeUp delay={0.3}>
-                <div className="relative aspect-[4/5] bg-prestige-accent rounded-3xl overflow-hidden border border-prestige-ink/5 shadow-inner group">
+              <motion.div
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5, ease: [0.21, 0.47, 0.32, 0.98], delay: 0.2 }}
+              >
+                <motion.div 
+                  whileHover={{ scale: 1.015 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className="relative aspect-[4/5] bg-prestige-accent rounded-3xl overflow-hidden border border-prestige-ink/5 shadow-inner group cursor-default"
+                >
                   <div className="absolute inset-0 flex items-center justify-center z-0 opacity-10 select-none">
                     <span className="text-[12rem] font-serif leading-none">JL</span>
                   </div>
                   <img
-                    src="/juan-luis-rodriguez.jpg"
+                    src="https://pub-6b5e631a2e94415a999c6c8f9c26b7a3.r2.dev/juanlu.png"
                     alt="Juan Luis Rodríguez"
-                    className="absolute inset-0 w-full h-full object-cover object-top transition-all duration-1000 group-hover:scale-105"
+                    className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-[2000ms] ease-out group-hover:scale-105"
                   />
                   <div className="absolute bottom-10 left-0 w-full text-center px-8 z-20">
-                    <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/90 mb-4 drop-shadow-md">Basado en Mallorca</p>
+                    <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/90 mb-4 drop-shadow-md text-slate-100">Basado en Mallorca</p>
                     <div className="h-px w-12 bg-white/40 mx-auto mb-4"></div>
-                    <p className="font-serif text-xl italic text-white drop-shadow-lg">"Toda una vida trabajando con y para las personas."</p>
+                    <p className="font-serif text-xl italic text-white drop-shadow-lg">"Claridad, rigor y humanidad."</p>
                   </div>
                   {/* Subtle overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-prestige-ink/80 via-transparent to-transparent opacity-70" />
-                </div>
-              </FadeUp>
+                </motion.div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -216,9 +224,12 @@ export default function App() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
                 {[
                   { value: "Salud", desc: "Base clínica, prevención y mejora postural" },
-                  { value: "Sólido", desc: "Dinamizador de equipos y educador" },
-                  { value: "6º", desc: "Fundador de Asociación Seis Grados" },
-                  { value: "Red", desc: "Colaboradores expertos para cada necesidad" }
+                  { value: "Humano", desc: "ENFOQUE PRÁCTICO Y SIN FÓRMULAS VACÍAS" },
+                  { 
+                    value: "Conexión", 
+                    desc: "DINAMIZACIÓN DE GRUPOS Y SENTIDO DE PERTENENCIA" 
+                  },
+                  { value: "Formación", desc: "PROGRAMAS BONIFICABLES PARA EMPRESAS" }
                 ].map((stat, i) => (
                   <div key={i} className="border-l border-prestige-ink/20 pl-8">
                     <div className="font-serif text-4xl text-prestige-ink mb-2">{stat.value}</div>
@@ -258,9 +269,9 @@ export default function App() {
               },
               {
                 icon: <Building2 className="w-8 h-8 text-prestige-blue" />,
-                title: "Formación de Equipos",
-                text: "Talleres prácticos de gestión del estrés y hábitos. (Parte de la inversión puede bonificarse a través de FUNDAE si se requiere).",
-                tag: "Formación de Valor"
+                title: "Formación para Equipos",
+                text: "Talleres prácticos sobre gestión del estrés, hábitos saludables, comunicación y liderazgo. En muchos casos, la formación puede financiarse con crédito bonificado que la empresa ya tiene disponible.",
+                tag: "FORMACIÓN BONIFICABLE"
               }
             ].map((service, i) => (
               <motion.div 
@@ -308,7 +319,7 @@ export default function App() {
                 {[
                   "Fisioterapia y salud articular",
                   "Pedagogía y educación grupal",
-                  "Formación (opción FUNDAE)",
+                  "Formación bonificable para empresas",
                   "Comunicación asertiva",
                   "Coordinación de dinámicas",
                   "Integración emocional",
@@ -342,14 +353,14 @@ export default function App() {
               {
                 icon: <Linkedin className="w-6 h-6" />,
                 name: "LinkedIn",
-                desc: "Reflexiones sobre consultoría estratégica, bienestar y desarrollo organizativo.",
+                desc: "Trayectoria profesional, reflexiones sobre bienestar corporativo y novedades de proyectos.",
                 link: "https://www.linkedin.com/in/juan-luis-rodriguez-avila-755743275/",
                 action: "Red Profesional"
               },
               {
-                icon: <div className="w-10 h-10 rounded bg-prestige-ink flex items-center justify-center text-white font-bold text-lg">6°</div>,
+                icon: <img src="https://pub-faa1d5bae1cd41a594ac4deff8eafd71.r2.dev/logo.svg" alt="Seis Grados" className="w-10 h-10 object-contain" />,
                 name: "Asociación Seis Grados",
-                desc: "Compromiso real con la juventud y el desarrollo comunitario a través de proyectos de formación, cultura y comunidad.",
+                desc: "Proyecto de liderazgo social fundado para promover la conexión humana, la formación y el desarrollo comunitario.",
                 link: "https://www.asociacionseisgrados.org",
                 action: "Desarrollo Social"
               },
@@ -387,15 +398,14 @@ export default function App() {
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <FadeUp>
             <SectionLabel>Contactar</SectionLabel>
-            <SectionTitle>El primer paso para cuidar<br />de su <em>capital humano</em></SectionTitle>
+            <SectionTitle>Iniciemos una conversación<br />sobre <em>tu equipo</em></SectionTitle>
             <div className="w-12 h-[1px] bg-prestige-ink/20 mb-12" />
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10">
               {[
                 { label: "Canal Telefónico", val: "640 761 701", href: "tel:+34640761701" },
                 { label: "Email Directo", val: "contacto@juanlurodriguez.com", href: "mailto:contacto@juanlurodriguez.com" },
-                { label: "Sede", val: "Mallorca", href: "#" },
-                { label: "Dosier Profesional", val: "Solicitar PDF", href: "mailto:contacto@juanlurodriguez.com?subject=Solicitud de Dossier Corporativo" }
+                { label: "Sede", val: "Mallorca", href: "#" }
               ].map((item, i) => (
                 <div key={i}>
                   <div className="text-[10px] font-bold tracking-[0.2em] uppercase text-prestige-ink/40 mb-3">{item.label}</div>
@@ -411,10 +421,10 @@ export default function App() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-20 -mt-20 blur-3xl transition-all group-hover:bg-prestige-blue/10 duration-1000" />
               
               <p className="font-serif text-2xl md:text-3xl font-light leading-snug mb-12 relative z-10">
-                ¿Desea elevar el clima, y la productividad de su plantilla con una solución clínica <em className="italic text-prestige-accent font-serif tracking-tight">y humana</em>?
+                ¿Quieres mejorar el bienestar y el rendimiento de tu equipo? Hablemos sin compromiso.
               </p>
-              <a href="mailto:contacto@juanlurodriguez.com?subject=Consulta de presupuesto para mi empresa" className="btn-primary w-full justify-center py-6 bg-prestige-bg text-prestige-ink hover:bg-white hover:text-prestige-blue ring-1 ring-white/10 relative z-10">
-                Pedir Presupuesto
+              <a href="mailto:contacto@juanlurodriguez.com" className="btn-primary w-full justify-center py-6 bg-prestige-bg text-prestige-ink hover:bg-white hover:text-prestige-blue ring-1 ring-white/10 relative z-10">
+                Hablemos
               </a>
             </div>
           </FadeUp>
@@ -449,7 +459,6 @@ export default function App() {
             <div>© 2026 Juan Luis Rodríguez · Consultoría Estratégica</div>
             <div className="flex gap-10">
               <a href="https://www.linkedin.com/in/juan-luis-rodriguez-avila-755743275/" className="hover:text-white transition-colors">LinkedIn</a>
-              <a href="mailto:contacto@juanlurodriguez.com" className="hover:text-white transition-colors">Dossier</a>
             </div>
           </div>
         </div>
