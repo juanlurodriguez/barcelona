@@ -1,4 +1,5 @@
 import { useState } from "react";
+import type { ReactNode } from "react";
 import { Menu, X, MessageCircle, Mail, Phone, CheckCircle2, HeartPulse, Brain, Users, ClipboardCheck } from "lucide-react";
 
 const wa = "https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20solicitar%20un%20diagnostico%20360%20gratuito%20para%20mi%20empresa.";
@@ -13,11 +14,11 @@ const nav = [
   ["Contacto", "contacto"],
 ];
 
-function Label({ children }: { children: React.ReactNode }) {
+function Label({ children }: { children: ReactNode }) {
   return <span className="section-label">{children}</span>;
 }
 
-function Title({ children, light = false }: { children: React.ReactNode; light?: boolean }) {
+function Title({ children, light = false }: { children: ReactNode; light?: boolean }) {
   return <h2 className={`section-title ${light ? "text-prestige-bg" : "text-prestige-ink"}`}>{children}</h2>;
 }
 
