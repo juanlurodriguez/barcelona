@@ -1,0 +1,27 @@
+name: Fix photo
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          r='https://pub-6b5e631a2e94415a999c6c8f9c26b7a3.r2.dev/juanlu.png'
+          add='.photo-card{background-image:url('+repr(r)+')!important;background-size:cover!important;background-position:top center!important;min-height:460px!important}@media(max-width:640px){.hero-side{opacity:1!important;transform:none!important;display:flex!important;visibility:visible!important;height:auto!important;padding:8px 0 36px!important}.photo-card{display:block!important;visibility:visible!important;width:100%!important;max-width:360px!important;height:460px!important;min-height:460px!important;aspect-ratio:auto!important;margin:0 auto 16px!important;flex:0 0 auto!important;background-image:url('+repr(r)+')!important;background-size:cover!important;background-position:top center!important}.photo-card img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:top center!important;opacity:1!important;display:block!important}}'
+          if 'height:460px!important' not in s:
+              s=s.replace('</style>',add+'</style>')
+          s=s.replace('<div class="hero-side reveal">','<div class="hero-side">')
+          p.write_text(s)
+          PY
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add index.html
+          git diff --cached --quiet || git commit -m 'Fix mobile photo'
+          git push
