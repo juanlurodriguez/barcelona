@@ -1,0 +1,26 @@
+name: Force R2 image
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          r='https://pub-6b5e631a2e94415a999c6c8f9c26b7a3.r2.dev/juanlu.png'
+          s=s.replace('/juanlu.webp', r).replace('https://juanlurodriguez.com/juanlu.webp', r)
+          if 'photo-card{background-image:url(' not in s:
+              s=s.replace('</style>', '.photo-card{background-image:url('+repr(r)+');background-size:cover;background-position:top center}@media(max-width:640px){.photo-card{background-image:url('+repr(r)+')!important;background-size:cover!important;background-position:top center!important}}</style>')
+          p.write_text(s)
+          PY
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add index.html
+          git diff --cached --quiet || git commit -m 'Forzar imagen R2 en hero movil'
+          git push
