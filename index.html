@@ -5,47 +5,1414 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bienestar Corporativo FUNDAE | Juanlu Rodríguez</title>
   <meta name="description" content="Formaciones de bienestar corporativo, team building y wellness days para empresas. Diagnóstico 360º gratuito. Presencial en Islas Baleares y Andalucía, online para toda España." />
-  <link rel="canonical" href="https://juanlurodriguez.com/" />
   <meta property="og:title" content="Bienestar Corporativo para Empresas | Juanlu Rodríguez" />
   <meta property="og:description" content="Reduce bajas, mejora el clima laboral y refuerza la cohesión de tu equipo con bienestar corporativo bonificable." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://juanlurodriguez.com/" />
   <meta property="og:image" content="https://pub-6b5e631a2e94415a999c6c8f9c26b7a3.r2.dev/juanlu.png" />
   <meta name="theme-color" content="#17231d" />
+  <link rel="canonical" href="https://juanlurodriguez.com/" />
+  <meta property="og:url" content="https://juanlurodriguez.com/" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    :root{--bg:#fbf8f2;--ink:#17231d;--muted:#66736c;--soft:#eee7da;--line:rgba(23,35,29,.12);--accent:#ef8f35;--green:#244b36;--white:#fff;--shadow:0 24px 70px rgba(23,35,29,.13)}
-    *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:88px}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(1160px,calc(100% - 40px));margin:0 auto}
-    .topbar{position:fixed;inset:0 0 auto;z-index:80;background:rgba(251,248,242,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand small{display:block;font-size:8px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:rgba(23,35,29,.45);margin-bottom:4px}.brand strong{display:block;font-family:"Cormorant Garamond",serif;font-size:23px;line-height:1;font-weight:600}.desktop-nav{display:flex;align-items:center;gap:26px}.desktop-nav a{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.16em;color:rgba(23,35,29,.65);transition:color .25s}.desktop-nav a:hover{color:var(--accent)}.nav-cta{background:var(--ink);color:var(--bg)!important;padding:13px 20px;border-radius:999px;box-shadow:0 14px 30px rgba(23,35,29,.15);transition:.25s}.nav-cta:hover{background:var(--green);transform:translateY(-1px)}.menu-btn{display:none;width:44px;height:44px;border:1px solid var(--line);background:rgba(255,255,255,.5);border-radius:999px;font-size:22px;color:var(--ink);cursor:pointer;align-items:center;justify-content:center}
-    .mobile-menu{display:none;position:fixed;z-index:70;left:0;right:0;top:74px;background:var(--bg);border-bottom:1px solid var(--line);padding:22px 20px 28px;box-shadow:0 28px 60px rgba(23,35,29,.1)}.mobile-menu.open{display:block;animation:slideDown .22s ease both}.mobile-menu a{display:block;text-align:center;padding:13px 0;font-family:"Cormorant Garamond",serif;font-size:28px;border-bottom:1px solid var(--line)}.mobile-menu a:last-of-type{border-bottom:none}.mobile-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}@keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:15px 22px;border:0;cursor:pointer;font-family:Inter,system-ui,sans-serif;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;transition:.25s;min-height:50px;text-align:center;white-space:nowrap}.btn-primary{background:var(--ink);color:var(--bg);box-shadow:0 16px 40px rgba(23,35,29,.17)}.btn-primary:hover{background:var(--green);transform:translateY(-2px)}.btn-secondary{background:var(--white);color:var(--ink);border:1px solid var(--line)}.btn-secondary:hover{border-color:var(--accent);transform:translateY(-2px)}.btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--line);font-size:10px}.btn-ghost:hover{color:var(--ink);border-color:var(--ink)}
-    .section{padding:92px 0}.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.dark,.authority{background:var(--ink);color:var(--bg)}.dark .eyebrow,.authority .eyebrow{color:rgba(251,248,242,.42)}.dark .lead,.authority .lead{color:rgba(251,248,242,.72)}.eyebrow{display:block;font-size:10px;font-weight:800;letter-spacing:.23em;text-transform:uppercase;color:rgba(23,35,29,.46);margin-bottom:16px}.title{font-family:"Cormorant Garamond",serif;font-size:clamp(36px,5vw,58px);font-weight:500;line-height:1;letter-spacing:-.025em;margin:0 0 22px}.lead{font-size:18px;line-height:1.72;color:var(--muted);margin:0}.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-    .hero{padding-top:104px;border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:0;min-height:calc(100vh - 104px)}.hero-copy{padding:70px 56px 70px 0;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}.hero h1{font-family:"Cormorant Garamond",serif;font-size:clamp(48px,6.5vw,82px);line-height:.97;font-weight:500;letter-spacing:-.035em;margin:0 0 24px}.hero-sub{font-size:19px;line-height:1.65;color:var(--muted);max-width:600px;margin:0 0 16px}.coverage{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:13px;font-weight:700;margin-bottom:28px;flex-wrap:wrap}.coverage::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);flex:0 0 auto}.trust-chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:24px;max-width:580px}.chip{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:13px;line-height:1.35}.check{width:18px;height:18px;border-radius:50%;background:rgba(239,143,53,.14);color:var(--accent);display:grid;place-items:center;font-size:11px;font-weight:900;flex:0 0 auto}.hero-side{padding:54px 0 54px 48px;display:flex;flex-direction:column;justify-content:center;gap:20px}.photo-card{position:relative;aspect-ratio:4/5;border-radius:32px;overflow:hidden;background:var(--soft);box-shadow:var(--shadow)}.photo-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform 1.2s ease}.photo-card:hover img{transform:scale(1.03)}.photo-card::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(23,35,29,.88),rgba(23,35,29,.04) 58%,transparent)}.photo-text{position:absolute;z-index:2;left:26px;right:26px;bottom:26px;color:white}.photo-text small{display:block;font-size:9px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;opacity:.78;margin-bottom:10px}.photo-text p{font-family:"Cormorant Garamond",serif;font-size:25px;line-height:1.05;margin:0}.dark-note{background:var(--ink);color:var(--bg);border-radius:24px;padding:26px 28px;box-shadow:0 22px 55px rgba(23,35,29,.16)}.dark-note h3{font-family:"Cormorant Garamond",serif;font-size:27px;line-height:1.05;margin:0 0 10px}.dark-note p{font-size:14px;line-height:1.65;color:rgba(251,248,242,.68);margin:0}
-    .impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}.impact-card{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);border-radius:22px;padding:26px}.impact-card span{display:block;font-size:26px;margin-bottom:16px}.impact-card p{margin:0;color:rgba(251,248,242,.76);font-size:15px;line-height:1.55}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}.service{background:var(--white);border:1px solid var(--line);border-radius:26px;padding:32px;transition:.25s}.service:hover{transform:translateY(-4px);box-shadow:0 24px 50px rgba(23,35,29,.1)}.icon{width:46px;height:46px;border-radius:15px;background:rgba(239,143,53,.13);color:var(--accent);display:grid;place-items:center;font-size:22px;margin-bottom:22px}.service h3{font-family:"Cormorant Garamond",serif;font-size:30px;line-height:1;margin:0 0 12px}.service p{margin:0;color:var(--muted);font-size:15px;line-height:1.7}.diagnostic{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}.card{background:rgba(255,255,255,.75);border:1px solid var(--line);border-radius:24px;padding:30px}.card strong{display:block;font-family:"Cormorant Garamond",serif;font-size:44px;line-height:1;margin-bottom:12px;color:var(--green)}.card p{margin:0;color:var(--muted);font-size:15px;line-height:1.6}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}.step{border:1px solid var(--line);background:rgba(255,255,255,.6);border-radius:22px;padding:24px}.step span{display:block;font-family:"Cormorant Garamond",serif;font-size:40px;color:rgba(36,75,54,.3);margin-bottom:14px;line-height:1}.step h3{font-family:"Cormorant Garamond",serif;font-size:24px;line-height:1;margin:0 0 10px}.step p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}.fundae-box{background:var(--white);border:1px solid var(--line);border-radius:30px;padding:40px;box-shadow:0 18px 45px rgba(23,35,29,.07)}.bullet-list{display:grid;gap:13px;margin-top:22px}.bullet-list div{display:flex;gap:12px;align-items:center;color:var(--muted);font-size:15px}.note-small{margin-top:22px;color:var(--muted);font-size:13px;line-height:1.6;font-style:italic}.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}.faq-item{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:26px}.faq-item h3{margin:0 0 10px;font-family:"Cormorant Garamond",serif;font-size:26px;line-height:1.05}.faq-item p{margin:0;color:var(--muted);font-size:15px;line-height:1.65}.final-cta{text-align:center;background:var(--soft);border-top:1px solid var(--line)}.final-cta .title{max-width:780px;margin-left:auto;margin-right:auto}.final-cta .lead{max-width:620px;margin:0 auto 8px}.final-cta .cta-row{justify-content:center}footer{background:var(--ink);color:rgba(251,248,242,.5);padding:52px 0}.footer-grid{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}footer strong{display:block;color:white;font-family:"Cormorant Garamond",serif;font-size:28px;margin-bottom:6px}footer small{font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a{font-size:14px;transition:color .2s}.footer-links a:hover{color:white}.mobile-sticky{position:fixed;z-index:90;left:12px;right:12px;bottom:12px;display:none;grid-template-columns:1fr 1fr;gap:8px}.mobile-sticky a{min-height:54px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:7px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;box-shadow:0 16px 38px rgba(23,35,29,.22)}.sticky-wa{background:var(--ink);color:var(--bg)}.sticky-form{background:var(--bg);color:var(--ink);border:1px solid var(--line)}.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
-    @media(max-width:980px){.desktop-nav{display:none}.menu-btn{display:flex}.hero-grid,.split{grid-template-columns:1fr}.hero-copy{border-right:0;padding:42px 0 28px}.hero-side{padding:0 0 48px}.impact-grid,.services-grid,.cards-3,.steps,.faq-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:640px){body{padding-bottom:88px}.container{width:min(100% - 28px,1160px)}.nav{height:68px}.mobile-menu{top:68px}.hero{padding-top:84px}.hero-grid{min-height:auto}.section{padding:64px 0}.hero-copy{padding-top:26px;padding-bottom:22px}.eyebrow{font-size:9px;letter-spacing:.18em;margin-bottom:13px}.hero h1{font-size:40px;line-height:.97;margin-bottom:18px}.hero-sub{font-size:16px;line-height:1.6;margin-bottom:14px}.coverage{font-size:12px;margin-bottom:20px;align-items:flex-start;line-height:1.5}.coverage::before{margin-top:5px}.cta-row{flex-direction:column;gap:10px;margin-top:20px}.btn{width:100%;padding:15px 16px;font-size:10px;letter-spacing:.1em}.trust-chips{grid-template-columns:1fr;gap:9px;margin-top:20px}.chip{font-size:13px}.hero-side{gap:14px;padding-bottom:40px}.photo-card{max-width:340px;margin:0 auto;border-radius:24px}.photo-text{left:20px;right:20px;bottom:20px}.photo-text p{font-size:21px}.dark-note{padding:22px;border-radius:20px}.dark-note h3{font-size:24px}.title{font-size:36px;line-height:1.02;margin-bottom:16px}.lead{font-size:16px;line-height:1.65}.impact-grid,.services-grid,.cards-3,.steps,.faq-grid{grid-template-columns:1fr}.service,.card,.step,.faq-item{padding:24px;border-radius:20px}.service h3,.faq-item h3{font-size:26px}.fundae-box{padding:26px;border-radius:22px}.footer-grid{flex-direction:column;align-items:flex-start}.mobile-sticky{display:grid}.mobile-actions{grid-template-columns:1fr}}
-  .photo-card{background-image:url('https://pub-6b5e631a2e94415a999c6c8f9c26b7a3.r2.dev/juanlu.png');background-size:cover;background-position:top center}@media(max-width:640px){.photo-card{background-image:url('https://pub-6b5e631a2e94415a999c6c8f9c26b7a3.r2.dev/juanlu.png')!important;background-size:cover!important;background-position:top center!important}}.photo-card{background-image:url('https://pub-6b5e631a2e94415a999c6c8f9c26b7a3.r2.dev/juanlu.png')!important;background-size:cover!important;background-position:top center!important;min-height:460px!important}@media(max-width:640px){.hero-side{opacity:1!important;transform:none!important;display:flex!important;visibility:visible!important;height:auto!important;padding:8px 0 36px!important}.photo-card{display:block!important;visibility:visible!important;width:100%!important;max-width:360px!important;height:460px!important;min-height:460px!important;aspect-ratio:auto!important;margin:0 auto 16px!important;flex:0 0 auto!important;background-image:url('https://pub-6b5e631a2e94415a999c6c8f9c26b7a3.r2.dev/juanlu.png')!important;background-size:cover!important;background-position:top center!important}.photo-card img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:top center!important;opacity:1!important;display:block!important}}</style>
+    :root {
+      --bg:     #fbf8f2;
+      --ink:    #17231d;
+      --muted:  #66736c;
+      --soft:   #eee7da;
+      --line:   rgba(23,35,29,.12);
+      --accent: #ef8f35;
+      --green:  #244b36;
+      --white:  #ffffff;
+      --shadow: 0 24px 70px rgba(23,35,29,.13);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 88px;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* ── TOPBAR ── */
+    .topbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 80;
+      background: rgba(251,248,242,.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand small {
+      display: block;
+      font-size: 8px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(23,35,29,.45);
+      margin-bottom: 4px;
+    }
+
+    .brand strong {
+      display: block;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 23px;
+      line-height: 1;
+      font-weight: 600;
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    .desktop-nav a {
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      color: rgba(23,35,29,.65);
+      transition: color .25s;
+    }
+
+    .desktop-nav a:hover { color: var(--accent); }
+
+    .nav-cta {
+      background: var(--ink);
+      color: var(--bg) !important;
+      padding: 13px 20px;
+      border-radius: 999px;
+      box-shadow: 0 14px 30px rgba(23,35,29,.15);
+      transition: background .25s, transform .25s;
+    }
+
+    .nav-cta:hover { background: var(--green); transform: translateY(-1px); }
+
+    .menu-btn {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.5);
+      border-radius: 999px;
+      font-size: 22px;
+      color: var(--ink);
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ── MOBILE MENU ── */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      z-index: 70;
+      left: 0; right: 0;
+      top: 74px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--line);
+      padding: 22px 20px 28px;
+      box-shadow: 0 28px 60px rgba(23,35,29,.1);
+    }
+
+    .mobile-menu.open {
+      display: block;
+      animation: slideDown .22s ease both;
+    }
+
+    .mobile-menu a {
+      display: block;
+      text-align: center;
+      padding: 13px 0;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 28px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .mobile-menu a:last-of-type { border-bottom: none; }
+
+    .mobile-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border-radius: 999px;
+      padding: 15px 22px;
+      border: 0;
+      cursor: pointer;
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      transition: transform .25s, background .25s, border-color .25s, box-shadow .25s;
+      min-height: 50px;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--ink);
+      color: var(--bg);
+      box-shadow: 0 16px 40px rgba(23,35,29,.17);
+    }
+
+    .btn-primary:hover { background: var(--green); transform: translateY(-2px); }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+
+    .btn-secondary:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      font-size: 10px;
+    }
+
+    .btn-ghost:hover { color: var(--ink); border-color: var(--ink); }
+
+    /* ── LAYOUT ── */
+    .section { padding: 92px 0; }
+
+    .split {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .split-even {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .dark {
+      background: var(--ink);
+      color: var(--bg);
+    }
+
+    .dark .eyebrow { color: rgba(251,248,242,.42); }
+    .dark .lead    { color: rgba(251,248,242,.72); }
+
+    /* ── TYPOGRAPHY ── */
+    .eyebrow {
+      display: block;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .23em;
+      text-transform: uppercase;
+      color: rgba(23,35,29,.46);
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(36px, 5vw, 58px);
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -.025em;
+      margin: 0 0 22px;
+    }
+
+    .lead {
+      font-size: 18px;
+      line-height: 1.72;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* ── CTA ROW ── */
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    /* ── HERO ── */
+    .hero-photo-mobile {
+      display: none;
+      position: relative;
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto 20px;
+      border-radius: 22px;
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      background: var(--soft);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-photo-mobile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+
+    .hero-photo-mobile::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(23,35,29,.85), rgba(23,35,29,.04) 55%, transparent);
+    }
+
+    .photo-text-mobile {
+      position: absolute;
+      z-index: 2;
+      left: 20px;
+      right: 20px;
+      bottom: 18px;
+      color: white;
+    }
+
+    .photo-text-mobile small {
+      display: block;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      opacity: .78;
+      margin-bottom: 6px;
+    }
+
+    .photo-text-mobile p {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 21px;
+      line-height: 1.05;
+      margin: 0;
+    }
+
+    .hero {
+      padding-top: 104px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.12fr .88fr;
+      gap: 0;
+      min-height: calc(100vh - 104px);
+    }
+
+    .hero-copy {
+      padding: 70px 56px 70px 0;
+      border-right: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(48px, 6.5vw, 82px);
+      line-height: .97;
+      font-weight: 500;
+      letter-spacing: -.035em;
+      margin: 0 0 24px;
+    }
+
+    .hero-sub {
+      font-size: 19px;
+      line-height: 1.65;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 0 16px;
+    }
+
+    .coverage {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .coverage::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex: 0 0 auto;
+    }
+
+    .trust-chips {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 11px;
+      margin-top: 24px;
+      max-width: 580px;
+    }
+
+    .chip {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .check {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: rgba(239,143,53,.14);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      font-size: 11px;
+      font-weight: 900;
+      flex: 0 0 auto;
+    }
+
+    .hero-side {
+      padding: 54px 0 54px 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .photo-card {
+      position: relative;
+      aspect-ratio: 4/5;
+      border-radius: 32px;
+      overflow: hidden;
+      background: var(--soft);
+      box-shadow: var(--shadow);
+    }
+
+    .photo-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition: transform 1.2s ease;
+    }
+
+    .photo-card:hover img { transform: scale(1.03); }
+
+    .photo-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(23,35,29,.88), rgba(23,35,29,.04) 58%, transparent);
+    }
+
+    .photo-text {
+      position: absolute;
+      z-index: 2;
+      left: 26px; right: 26px; bottom: 26px;
+      color: white;
+    }
+
+    .photo-text small {
+      display: block;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      opacity: .78;
+      margin-bottom: 10px;
+    }
+
+    .photo-text p {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 25px;
+      line-height: 1.05;
+      margin: 0;
+    }
+
+    .dark-note {
+      background: var(--ink);
+      color: var(--bg);
+      border-radius: 24px;
+      padding: 26px 28px;
+      box-shadow: 0 22px 55px rgba(23,35,29,.16);
+    }
+
+    .dark-note h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 27px;
+      line-height: 1.05;
+      margin: 0 0 10px;
+    }
+
+    .dark-note p {
+      font-size: 14px;
+      line-height: 1.65;
+      color: rgba(251,248,242,.68);
+      margin: 0;
+    }
+
+    /* ── IMPACT ── */
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 14px;
+      margin-top: 40px;
+    }
+
+    .impact-card {
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      border-radius: 22px;
+      padding: 26px;
+    }
+
+    .impact-card span {
+      display: block;
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+
+    .impact-card p {
+      margin: 0;
+      color: rgba(251,248,242,.76);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 18px;
+      margin-top: 36px;
+    }
+
+    .service {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 32px;
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .service:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 50px rgba(23,35,29,.1);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 15px;
+      background: rgba(239,143,53,.13);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+      margin-bottom: 22px;
+    }
+
+    .service h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 30px;
+      line-height: 1;
+      margin: 0 0 12px;
+    }
+
+    .service p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* ── DIAGNOSTIC ── */
+    .diagnostic {
+      background: var(--soft);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .cards-3 {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .card {
+      background: rgba(255,255,255,.75);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 30px;
+    }
+
+    .card strong {
+      display: block;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 44px;
+      line-height: 1;
+      margin-bottom: 12px;
+      color: var(--green);
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* ── STEPS ── */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .step {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.6);
+      border-radius: 22px;
+      padding: 24px;
+    }
+
+    .step span {
+      display: block;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 40px;
+      color: rgba(36,75,54,.3);
+      margin-bottom: 14px;
+      line-height: 1;
+    }
+
+    .step h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 24px;
+      line-height: 1;
+      margin: 0 0 10px;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    /* ── FUNDAE ── */
+    .fundae-box {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: 40px;
+      box-shadow: 0 18px 45px rgba(23,35,29,.07);
+    }
+
+    .bullet-list {
+      display: grid;
+      gap: 13px;
+      margin-top: 22px;
+    }
+
+    .bullet-list div {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .note-small {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    /* ── AUTHORITY ── */
+    .authority { background: var(--ink); color: var(--bg); }
+
+    /* ── FAQ ── */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 36px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 26px;
+    }
+
+    .faq-item h3 {
+      margin: 0 0 10px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 26px;
+      line-height: 1.05;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    /* ── FINAL CTA ── */
+    .final-cta {
+      text-align: center;
+      background: var(--soft);
+      border-top: 1px solid var(--line);
+    }
+
+    .final-cta .title {
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .final-cta .lead {
+      max-width: 620px;
+      margin: 0 auto 8px;
+    }
+
+    .final-cta .cta-row { justify-content: center; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      color: rgba(251,248,242,.5);
+      padding: 52px 0;
+    }
+
+    .footer-grid {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    footer strong {
+      display: block;
+      color: white;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+
+    footer small {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 14px;
+      transition: color .2s;
+    }
+
+    .footer-links a:hover { color: white; }
+
+    /* ── MOBILE STICKY ── */
+    .mobile-sticky {
+      position: fixed;
+      z-index: 90;
+      left: 12px; right: 12px; bottom: 12px;
+      display: none;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .mobile-sticky a {
+      min-height: 54px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      box-shadow: 0 16px 38px rgba(23,35,29,.22);
+    }
+
+    .mobile-sticky .sticky-wa {
+      background: var(--ink);
+      color: var(--bg);
+    }
+
+    .mobile-sticky .sticky-form {
+      background: var(--bg);
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+
+    /* ── REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── DESKTOP ── */
+    @media (max-width: 980px) {
+      .desktop-nav { display: none; }
+      .menu-btn { display: flex; }
+
+      .hero-grid, .split, .split-even {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy {
+        border-right: 0;
+        padding: 42px 0 28px;
+      }
+
+      .hero-side { padding: 0 0 48px; }
+
+      .impact-grid,
+      .services-grid,
+      .cards-3,
+      .steps,
+      .faq-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 640px) {
+      body { padding-bottom: 88px; }
+
+      .container { width: min(100% - 28px, 1160px); }
+
+      .nav { height: 68px; }
+      .mobile-menu { top: 68px; }
+      .hero { padding-top: 84px; }
+      .hero-grid { min-height: auto; }
+      .section { padding: 64px 0; }
+
+      .hero-copy { padding-top: 26px; padding-bottom: 22px; }
+
+      .eyebrow {
+        font-size: 9px;
+        letter-spacing: .18em;
+        margin-bottom: 13px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+        line-height: .97;
+        margin-bottom: 18px;
+      }
+
+      .hero-sub {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 14px;
+      }
+
+      .coverage {
+        font-size: 12px;
+        margin-bottom: 20px;
+        align-items: flex-start;
+        line-height: 1.5;
+      }
+
+      .coverage::before { margin-top: 5px; }
+
+      .cta-row {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 15px 16px;
+        font-size: 10px;
+        letter-spacing: .1em;
+      }
+
+      .trust-chips {
+        grid-template-columns: 1fr;
+        gap: 9px;
+        margin-top: 20px;
+      }
+
+      .chip { font-size: 13px; }
+
+      .hero-side { gap: 14px; padding-bottom: 40px; }
+
+      .photo-card {
+        max-width: 340px;
+        margin: 0 auto;
+        border-radius: 24px;
+      }
+
+      .photo-text { left: 20px; right: 20px; bottom: 20px; }
+      .photo-text p { font-size: 21px; }
+
+      .dark-note { padding: 22px; border-radius: 20px; }
+      .dark-note h3 { font-size: 24px; }
+
+      .title {
+        font-size: 36px;
+        line-height: 1.02;
+        margin-bottom: 16px;
+      }
+
+      .lead { font-size: 16px; line-height: 1.65; }
+
+      .impact-grid,
+      .services-grid,
+      .cards-3,
+      .steps,
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service, .card, .step, .faq-item { padding: 24px; border-radius: 20px; }
+      .service h3, .faq-item h3 { font-size: 26px; }
+
+      .fundae-box { padding: 26px; border-radius: 22px; }
+
+      .footer-grid { flex-direction: column; align-items: flex-start; }
+
+      .mobile-sticky { display: grid; }
+
+      .hero-photo-mobile { display: block; }
+
+      .hero-side { display: none; }
+
+      .mobile-actions { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
+
 <body>
-<header class="topbar"><div class="container nav"><a href="#inicio" class="brand"><small>Bienestar corporativo · FUNDAE</small><strong>Juanlu Rodríguez</strong></a><nav class="desktop-nav"><a href="#diagnostico">Diagnóstico</a><a href="#servicios">Servicios</a><a href="#metodo">Método</a><a href="#fundae">FUNDAE</a><a href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20360%C2%BA%20gratuito%20para%20mi%20empresa." target="_blank" rel="noopener" class="nav-cta">Diagnóstico gratis</a></nav><button class="menu-btn" id="menuBtn" aria-label="Menú">☰</button></div><div class="mobile-menu" id="mobileMenu"><a href="#diagnostico">Diagnóstico</a><a href="#servicios">Servicios</a><a href="#metodo">Método</a><a href="#fundae">FUNDAE</a><a href="#contacto">Contacto</a><div class="mobile-actions"><a class="btn btn-primary" href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20360%C2%BA%20gratuito%20para%20mi%20empresa." target="_blank" rel="noopener">WhatsApp</a><a class="btn btn-secondary" href="https://forms.gle/ddGQ38kZdyYvEaiZ9" target="_blank" rel="noopener">Dejar datos</a></div></div></header>
+
+<!-- ── TOPBAR ── -->
+<header class="topbar">
+  <div class="container nav">
+    <a href="#inicio" class="brand">
+      <small>Bienestar corporativo · FUNDAE</small>
+      <strong>Juanlu Rodríguez</strong>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#diagnostico">Diagnóstico</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#metodo">Método</a>
+      <a href="#fundae">FUNDAE</a>
+      <a href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20360%C2%BA%20gratuito%20para%20mi%20empresa." target="_blank" rel="noopener" class="nav-cta">Diagnóstico gratis</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Menú">☰</button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#diagnostico">Diagnóstico</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#metodo">Método</a>
+    <a href="#fundae">FUNDAE</a>
+    <a href="#contacto">Contacto</a>
+
+    <div class="mobile-actions">
+      <a class="btn btn-primary"
+         href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20360%C2%BA%20gratuito%20para%20mi%20empresa."
+         target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+      <a class="btn btn-secondary"
+         href="https://forms.gle/ddGQ38kZdyYvEaiZ9"
+         target="_blank" rel="noopener">
+        Dejar datos
+      </a>
+    </div>
+  </div>
+</header>
+
 <main>
-<section class="hero" id="inicio"><div class="container hero-grid"><div class="hero-copy reveal"><span class="eyebrow">Bienestar corporativo bonificable para empresas</span><h1>Reduce bajas, mejora el clima laboral y consigue que tu equipo quiera quedarse.</h1><p class="hero-sub">Formaciones, wellness days y team buildings prácticos para cuidar la salud física, mental y relacional de tus trabajadores.</p><div class="coverage">Presencial en Islas Baleares y Andalucía · Online para toda España</div><div class="cta-row" style="margin-top:0;"><a class="btn btn-primary" href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20360%C2%BA%20gratuito%20para%20mi%20empresa." target="_blank" rel="noopener">WhatsApp diagnóstico</a><a class="btn btn-secondary" href="https://forms.gle/ddGQ38kZdyYvEaiZ9" target="_blank" rel="noopener">Solicitar propuesta</a></div><div class="trust-chips"><div class="chip"><span class="check">✓</span> Diagnóstico 360º gratuito</div><div class="chip"><span class="check">✓</span> Propuesta a medida en 48h</div><div class="chip"><span class="check">✓</span> Bonificable vía FUNDAE</div><div class="chip"><span class="check">✓</span> Baleares · Andalucía · Online</div></div></div><div class="hero-side"><div class="photo-card"><img src="https://pub-6b5e631a2e94415a999c6c8f9c26b7a3.r2.dev/juanlu.png" alt="Juanlu Rodríguez, bienestar corporativo para empresas" /><div class="photo-text"><small>Juanlu Rodríguez</small><p>Fisioterapeuta, formador y dinamizador de equipos.</p></div></div><div class="dark-note"><h3>No pierdes solo horas por bajas. Pierdes energía, compromiso y talento.</h3><p>El bienestar bien diseñado no es una actividad bonita. Es una herramienta de gestión.</p></div></div></div></section>
-<section class="section" id="problema"><div class="container split"><div class="reveal"><span class="eyebrow">El problema real</span><h2 class="title">Tu empresa no pierde solo horas por bajas.</h2></div><div class="reveal"><p class="lead">Cuando un equipo se desgasta, aparecen molestias físicas, estrés, conflictos, rotación y falta de pertenencia.<br><br>El bienestar corporativo bien diseñado ayuda a reducir ese desgaste y refuerza el vínculo entre empresa y trabajadores.</p></div></div></section>
-<section class="section dark"><div class="container"><div class="split"><div class="reveal"><span class="eyebrow">Bienestar y rendimiento</span><h2 class="title">Cuidar al trabajador también es cuidar el negocio.</h2></div><p class="lead reveal">Cuando las personas se sienten cuidadas, escuchadas y valoradas, aumenta el vínculo con la empresa. Y cuando ese vínculo mejora, también mejora el clima, la productividad y la retención.</p></div><div class="impact-grid"><div class="impact-card reveal"><span>↓</span><p>Menos desgaste físico y mental.</p></div><div class="impact-card reveal"><span>+</span><p>Más pertenencia y cohesión interna.</p></div><div class="impact-card reveal"><span>✓</span><p>Mejor clima laboral y comunicación.</p></div><div class="impact-card reveal"><span>↗</span><p>Mayor retención de talento.</p></div></div></div></section>
-<section class="section" id="servicios"><div class="container"><div class="split" style="margin-bottom:16px;"><div class="reveal"><span class="eyebrow">Qué ofrecemos</span><h2 class="title">Tres líneas claras para empresas que quieren actuar.</h2></div><p class="lead reveal">Menos catálogo infinito y más foco. Cada acción se adapta al tipo de empresa, equipo, objetivos y crédito formativo disponible.</p></div><div class="services-grid"><div class="service reveal"><div class="icon">✦</div><h3>Formaciones de bienestar laboral</h3><p>Talleres prácticos sobre espalda sana, ergonomía, movilidad, estrés laboral, alimentación saludable, comunicación y hábitos de salud.</p></div><div class="service reveal"><div class="icon">●</div><h3>Team building y wellness days</h3><p>Experiencias para mejorar cohesión, confianza, comunicación, pertenencia y clima interno.</p></div><div class="service reveal"><div class="icon">↻</div><h3>Plan 360º personalizado</h3><p>Programa semestral o anual con diagnóstico, calendario de acciones, ejecución y medición de feedback.</p></div></div></div></section>
-<section class="section diagnostic" id="diagnostico"><div class="container"><div class="split"><div class="reveal"><span class="eyebrow">Diagnóstico 360º gratuito</span><h2 class="title">Primero medimos. Después proponemos.</h2><p class="lead">Antes de recomendar una formación o una actividad, analizamos qué necesita realmente tu equipo: salud física, estrés, clima laboral y cohesión interna.</p></div><div class="reveal"><div class="cards-3" style="margin-top:0;"><div class="card"><strong>3 min</strong><p>Test breve y anónimo para empleados.</p></div><div class="card"><strong>3 áreas</strong><p>Salud física, mental y cohesión de equipo.</p></div><div class="card"><strong>48h</strong><p>Lectura de resultados y propuesta de acción.</p></div></div><div class="cta-row"><a class="btn btn-primary" href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20360%C2%BA%20gratuito%20para%20mi%20empresa." target="_blank" rel="noopener">Empezar por WhatsApp</a><a class="btn btn-secondary" href="https://forms.gle/ddGQ38kZdyYvEaiZ9" target="_blank" rel="noopener">Solicitar propuesta</a></div></div></div></div></section>
-<section class="section" id="metodo"><div class="container"><div class="reveal" style="max-width:680px;"><span class="eyebrow">Método</span><h2 class="title">Simple para la empresa. Potente para el equipo.</h2></div><div class="steps"><div class="step reveal"><span>01</span><h3>Contexto</h3><p>Entendemos situación, equipo y objetivos de la empresa.</p></div><div class="step reveal"><span>02</span><h3>Diagnóstico</h3><p>Detectamos necesidades reales antes de proponer nada.</p></div><div class="step reveal"><span>03</span><h3>Propuesta</h3><p>Diseñamos una acción concreta y adaptada a vuestra realidad.</p></div><div class="step reveal"><span>04</span><h3>FUNDAE</h3><p>Revisamos el encaje formativo y los requisitos aplicables.</p></div><div class="step reveal"><span>05</span><h3>Medición</h3><p>Ejecutamos, recogemos feedback y definimos próximos pasos.</p></div></div></div></section>
-<section class="section" id="fundae"><div class="container split"><div class="reveal"><span class="eyebrow">Formación bonificable</span><h2 class="title">Aprovecha el crédito formativo que tu empresa ya puede tener disponible.</h2></div><div class="fundae-box reveal"><p class="lead">Muchas acciones de bienestar, salud laboral y habilidades transversales pueden plantearse como formación bonificable a través de FUNDAE, siempre sujeto a crédito disponible, modalidad y cumplimiento de requisitos.</p><div class="bullet-list"><div><span class="check">✓</span> Consulta de encaje formativo</div><div><span class="check">✓</span> Acompañamiento documental</div><div><span class="check">✓</span> Formaciones adaptadas a necesidades reales</div><div><span class="check">✓</span> Modalidad presencial, online o híbrida</div></div><p class="note-small">La bonificación depende del crédito disponible de cada empresa y del cumplimiento de los requisitos aplicables.</p><div class="cta-row" style="margin-top:24px;"><a class="btn btn-primary" href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20saber%20si%20mi%20empresa%20puede%20bonificar%20formaci%C3%B3n%20de%20bienestar%20a%20trav%C3%A9s%20de%20FUNDAE." target="_blank" rel="noopener">Consultar FUNDAE por WhatsApp</a></div></div></div></section>
-<section class="section authority"><div class="container split"><div class="reveal"><span class="eyebrow">Por qué Juanlu</span><h2 class="title">No soy una agencia que vende dinámicas genéricas.</h2></div><div class="reveal"><p class="lead">Soy fisioterapeuta, formador y dinamizador de equipos.<br><br>Mi enfoque une salud física, prevención, educación, comunicación y experiencia real trabajando con personas. Cada acción tiene una intención clara: reducir desgaste, mejorar cohesión y hacer que el trabajador sienta que la empresa se preocupa de verdad.</p></div></div></section>
-<section class="section"><div class="container"><div class="reveal" style="max-width:720px;"><span class="eyebrow">Preguntas frecuentes</span><h2 class="title">Antes de hablar, esto suele ser lo importante.</h2></div><div class="faq-grid"><div class="faq-item reveal"><h3>¿Esto es bonificable?</h3><p>Puede serlo, según crédito disponible, modalidad y requisitos. Lo revisamos antes de proponer.</p></div><div class="faq-item reveal"><h3>¿Dónde trabajas presencialmente?</h3><p>En Islas Baleares y Andalucía. Algunas formaciones pueden realizarse online para empresas de toda España.</p></div><div class="faq-item reveal"><h3>¿Cuánto dura una actividad?</h3><p>Normalmente entre 2 y 3 horas, aunque puede adaptarse según objetivos, número de participantes y formato.</p></div><div class="faq-item reveal"><h3>¿Sirve solo para oficinas?</h3><p>No. Se adapta a hoteles, comercios, almacenes, equipos operativos, equipos directivos y oficinas.</p></div></div></div></section>
-<section class="section final-cta" id="contacto"><div class="container reveal"><span class="eyebrow">Contacto</span><h2 class="title">¿Quieres saber qué acción tendría más impacto en tu equipo?</h2><p class="lead">Solicita un diagnóstico 360º gratuito y recibe una propuesta clara, práctica y adaptada a tu empresa.</p><div class="cta-row"><a class="btn btn-primary" href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20360%C2%BA%20gratuito%20para%20mi%20empresa." target="_blank" rel="noopener">WhatsApp</a><a class="btn btn-secondary" href="https://forms.gle/ddGQ38kZdyYvEaiZ9" target="_blank" rel="noopener">Solicitar propuesta</a><button class="btn btn-ghost" onclick="saveContact()">Guardar contacto</button></div></div></section>
+
+<!-- ── HERO ── -->
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Bienestar corporativo bonificable para empresas</span>
+
+      <h1>Reduce bajas, mejora el clima laboral y consigue que tu equipo quiera quedarse.</h1>
+
+      <p class="hero-sub">
+        Formaciones, wellness days y team buildings prácticos para cuidar la salud física, mental y relacional de tus trabajadores.
+      </p>
+
+      <!-- Foto visible solo en móvil -->
+      <div class="hero-photo-mobile">
+        <img src="https://pub-6b5e631a2e94415a999c6c8f9c26b7a3.r2.dev/juanlu.png"
+             alt="Juanlu Rodríguez, fisioterapeuta y formador">
+        <div class="photo-text-mobile">
+          <small>Juanlu Rodríguez</small>
+          <p>Fisioterapeuta, formador y dinamizador de equipos.</p>
+        </div>
+      </div>
+
+      <div class="coverage">
+        Presencial en Islas Baleares y Andalucía · Online para toda España
+      </div>
+
+      <div class="cta-row" style="margin-top:0;">
+        <a class="btn btn-primary"
+           href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20360%C2%BA%20gratuito%20para%20mi%20empresa."
+           target="_blank" rel="noopener">
+          WhatsApp diagnóstico
+        </a>
+        <a class="btn btn-secondary"
+           href="https://forms.gle/ddGQ38kZdyYvEaiZ9"
+           target="_blank" rel="noopener">
+          Solicitar propuesta
+        </a>
+      </div>
+
+      <div class="trust-chips">
+        <div class="chip"><span class="check">✓</span> Diagnóstico 360º gratuito</div>
+        <div class="chip"><span class="check">✓</span> Propuesta a medida en 48h</div>
+        <div class="chip"><span class="check">✓</span> Bonificable vía FUNDAE</div>
+        <div class="chip"><span class="check">✓</span> Baleares · Andalucía · Online</div>
+      </div>
+    </div>
+
+    <div class="hero-side reveal">
+      <div class="photo-card">
+        <img src="https://pub-6b5e631a2e94415a999c6c8f9c26b7a3.r2.dev/juanlu.png"
+             alt="Juanlu Rodríguez, bienestar corporativo para empresas" />
+        <div class="photo-text">
+          <small>Juanlu Rodríguez</small>
+          <p>Fisioterapeuta, formador y dinamizador de equipos.</p>
+        </div>
+      </div>
+
+      <div class="dark-note">
+        <h3>No pierdes solo horas por bajas. Pierdes energía, compromiso y talento.</h3>
+        <p>El bienestar bien diseñado no es una actividad bonita. Es una herramienta de gestión.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROBLEMA ── -->
+<section class="section" id="problema">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">El problema real</span>
+      <h2 class="title">Tu empresa no pierde solo horas por bajas.</h2>
+    </div>
+    <div class="reveal">
+      <p class="lead">
+        Cuando un equipo se desgasta, aparecen molestias físicas, estrés, conflictos, rotación y falta de pertenencia.
+        <br><br>
+        El bienestar corporativo bien diseñado ayuda a reducir ese desgaste y refuerza el vínculo entre empresa y trabajadores.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── BIENESTAR Y RENDIMIENTO ── -->
+<section class="section dark">
+  <div class="container">
+    <div class="split">
+      <div class="reveal">
+        <span class="eyebrow">Bienestar y rendimiento</span>
+        <h2 class="title">Cuidar al trabajador también es cuidar el negocio.</h2>
+      </div>
+      <p class="lead reveal">
+        Cuando las personas se sienten cuidadas, escuchadas y valoradas, aumenta el vínculo con la empresa. Y cuando ese vínculo mejora, también mejora el clima, la productividad y la retención.
+      </p>
+    </div>
+
+    <div class="impact-grid">
+      <div class="impact-card reveal"><span>↓</span><p>Menos desgaste físico y mental.</p></div>
+      <div class="impact-card reveal"><span>+</span><p>Más pertenencia y cohesión interna.</p></div>
+      <div class="impact-card reveal"><span>✓</span><p>Mejor clima laboral y comunicación.</p></div>
+      <div class="impact-card reveal"><span>↗</span><p>Mayor retención de talento.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICIOS ── -->
+<section class="section" id="servicios">
+  <div class="container">
+    <div class="split" style="margin-bottom:16px;">
+      <div class="reveal">
+        <span class="eyebrow">Qué ofrecemos</span>
+        <h2 class="title">Tres líneas claras para empresas que quieren actuar.</h2>
+      </div>
+      <p class="lead reveal">
+        Menos catálogo infinito y más foco. Cada acción se adapta al tipo de empresa, equipo, objetivos y crédito formativo disponible.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service reveal">
+        <div class="icon">✦</div>
+        <h3>Formaciones de bienestar laboral</h3>
+        <p>Talleres prácticos sobre espalda sana, ergonomía, movilidad, estrés laboral, alimentación saludable, comunicación y hábitos de salud.</p>
+      </div>
+
+      <div class="service reveal">
+        <div class="icon">●</div>
+        <h3>Team building y wellness days</h3>
+        <p>Experiencias para mejorar cohesión, confianza, comunicación, pertenencia y clima interno.</p>
+      </div>
+
+      <div class="service reveal">
+        <div class="icon">↻</div>
+        <h3>Plan 360º personalizado</h3>
+        <p>Programa semestral o anual con diagnóstico, calendario de acciones, ejecución y medición de feedback.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DIAGNÓSTICO ── -->
+<section class="section diagnostic" id="diagnostico">
+  <div class="container">
+    <div class="split">
+      <div class="reveal">
+        <span class="eyebrow">Diagnóstico 360º gratuito</span>
+        <h2 class="title">Primero medimos. Después proponemos.</h2>
+        <p class="lead">
+          Antes de recomendar una formación o una actividad, analizamos qué necesita realmente tu equipo: salud física, estrés, clima laboral y cohesión interna.
+        </p>
+      </div>
+
+      <div class="reveal">
+        <div class="cards-3" style="margin-top:0;">
+          <div class="card">
+            <strong>3 min</strong>
+            <p>Test breve y anónimo para empleados.</p>
+          </div>
+          <div class="card">
+            <strong>3 áreas</strong>
+            <p>Salud física, mental y cohesión de equipo.</p>
+          </div>
+          <div class="card">
+            <strong>48h</strong>
+            <p>Lectura de resultados y propuesta de acción.</p>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary"
+             href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20360%C2%BA%20gratuito%20para%20mi%20empresa."
+             target="_blank" rel="noopener">
+            Empezar por WhatsApp
+          </a>
+          <a class="btn btn-secondary"
+             href="https://forms.gle/ddGQ38kZdyYvEaiZ9"
+             target="_blank" rel="noopener">
+            Solicitar propuesta
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MÉTODO ── -->
+<section class="section" id="metodo">
+  <div class="container">
+    <div class="reveal" style="max-width:680px;">
+      <span class="eyebrow">Método</span>
+      <h2 class="title">Simple para la empresa. Potente para el equipo.</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <span>01</span>
+        <h3>Contexto</h3>
+        <p>Entendemos situación, equipo y objetivos de la empresa.</p>
+      </div>
+      <div class="step reveal">
+        <span>02</span>
+        <h3>Diagnóstico</h3>
+        <p>Detectamos necesidades reales antes de proponer nada.</p>
+      </div>
+      <div class="step reveal">
+        <span>03</span>
+        <h3>Propuesta</h3>
+        <p>Diseñamos una acción concreta y adaptada a vuestra realidad.</p>
+      </div>
+      <div class="step reveal">
+        <span>04</span>
+        <h3>FUNDAE</h3>
+        <p>Revisamos el encaje formativo y los requisitos aplicables.</p>
+      </div>
+      <div class="step reveal">
+        <span>05</span>
+        <h3>Medición</h3>
+        <p>Ejecutamos, recogemos feedback y definimos próximos pasos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FUNDAE ── -->
+<section class="section" id="fundae">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">Formación bonificable</span>
+      <h2 class="title">Aprovecha el crédito formativo que tu empresa ya puede tener disponible.</h2>
+    </div>
+
+    <div class="fundae-box reveal">
+      <p class="lead">
+        Muchas acciones de bienestar, salud laboral y habilidades transversales pueden plantearse como formación bonificable a través de FUNDAE, siempre sujeto a crédito disponible, modalidad y cumplimiento de requisitos.
+      </p>
+
+      <div class="bullet-list">
+        <div><span class="check">✓</span> Consulta de encaje formativo</div>
+        <div><span class="check">✓</span> Acompañamiento documental</div>
+        <div><span class="check">✓</span> Formaciones adaptadas a necesidades reales</div>
+        <div><span class="check">✓</span> Modalidad presencial, online o híbrida</div>
+      </div>
+
+      <p class="note-small">
+        La bonificación depende del crédito disponible de cada empresa y del cumplimiento de los requisitos aplicables.
+      </p>
+
+      <div class="cta-row" style="margin-top:24px;">
+        <a class="btn btn-primary"
+           href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20saber%20si%20mi%20empresa%20puede%20bonificar%20formaci%C3%B3n%20de%20bienestar%20a%20trav%C3%A9s%20de%20FUNDAE."
+           target="_blank" rel="noopener">
+          Consultar FUNDAE por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── AUTORIDAD ── -->
+<section class="section authority">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">Por qué Juanlu</span>
+      <h2 class="title">No soy una agencia que vende dinámicas genéricas.</h2>
+    </div>
+    <div class="reveal">
+      <p class="lead">
+        Soy fisioterapeuta, formador y dinamizador de equipos.
+        <br><br>
+        Mi enfoque une salud física, prevención, educación, comunicación y experiencia real trabajando con personas. Cada acción tiene una intención clara: reducir desgaste, mejorar cohesión y hacer que el trabajador sienta que la empresa se preocupa de verdad.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="section">
+  <div class="container">
+    <div class="reveal" style="max-width:720px;">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2 class="title">Antes de hablar, esto suele ser lo importante.</h2>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-item reveal">
+        <h3>¿Esto es bonificable?</h3>
+        <p>Puede serlo, según crédito disponible, modalidad y requisitos. Lo revisamos antes de proponer.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>¿Dónde trabajas presencialmente?</h3>
+        <p>En Islas Baleares y Andalucía. Algunas formaciones pueden realizarse online para empresas de toda España.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>¿Cuánto dura una actividad?</h3>
+        <p>Normalmente entre 2 y 3 horas, aunque puede adaptarse según objetivos, número de participantes y formato.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>¿Sirve solo para oficinas?</h3>
+        <p>No. Se adapta a hoteles, comercios, almacenes, equipos operativos, equipos directivos y oficinas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA FINAL ── -->
+<section class="section final-cta" id="contacto">
+  <div class="container reveal">
+    <span class="eyebrow">Contacto</span>
+    <h2 class="title">¿Quieres saber qué acción tendría más impacto en tu equipo?</h2>
+    <p class="lead">
+      Solicita un diagnóstico 360º gratuito y recibe una propuesta clara, práctica y adaptada a tu empresa.
+    </p>
+
+    <div class="cta-row">
+      <a class="btn btn-primary"
+         href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20360%C2%BA%20gratuito%20para%20mi%20empresa."
+         target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+      <a class="btn btn-secondary"
+         href="https://forms.gle/ddGQ38kZdyYvEaiZ9"
+         target="_blank" rel="noopener">
+        Solicitar propuesta
+      </a>
+      <button class="btn btn-ghost" onclick="saveContact()">
+        Guardar contacto
+      </button>
+    </div>
+  </div>
+</section>
+
 </main>
-<footer><div class="container footer-grid"><div><strong>Juanlu Rodríguez</strong><small>Bienestar corporativo · FUNDAE · Baleares · Andalucía · Online</small></div><div class="footer-links"><a href="tel:+34640761701">640 761 701</a><a href="mailto:contacto@juanlurodriguez.com">contacto@juanlurodriguez.com</a><a href="https://juanlurodriguez.com">juanlurodriguez.com</a></div></div></footer>
-<div class="mobile-sticky"><a class="sticky-wa" href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20360%C2%BA%20gratuito%20para%20mi%20empresa." target="_blank" rel="noopener">WhatsApp</a><a class="sticky-form" href="https://forms.gle/ddGQ38kZdyYvEaiZ9" target="_blank" rel="noopener">Dejar datos</a></div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <strong>Juanlu Rodríguez</strong>
+      <small>Bienestar corporativo · FUNDAE · Baleares · Andalucía · Online</small>
+    </div>
+    <div class="footer-links">
+      <a href="tel:+34640761701">640 761 701</a>
+      <a href="mailto:contacto@juanlurodriguez.com">contacto@juanlurodriguez.com</a>
+      <a href="https://juanlurodriguez.com">juanlurodriguez.com</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ── MOBILE STICKY ── -->
+<div class="mobile-sticky">
+  <a class="sticky-wa"
+     href="https://wa.me/34640761701?text=Hola%20Juanlu%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20360%C2%BA%20gratuito%20para%20mi%20empresa."
+     target="_blank" rel="noopener">
+    WhatsApp
+  </a>
+  <a class="sticky-form"
+     href="https://forms.gle/ddGQ38kZdyYvEaiZ9"
+     target="_blank" rel="noopener">
+    Dejar datos
+  </a>
+</div>
+
 <script>
-const menuBtn=document.getElementById('menuBtn');const mobileMenu=document.getElementById('mobileMenu');menuBtn.addEventListener('click',()=>{const open=mobileMenu.classList.toggle('open');menuBtn.textContent=open?'×':'☰'});mobileMenu.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{mobileMenu.classList.remove('open');menuBtn.textContent='☰'})});const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));function saveContact(){const vcard=['BEGIN:VCARD','VERSION:3.0','N:Rodriguez;Juanlu;;;','FN:Juanlu Rodriguez','ORG:Bienestar Corporativo','TITLE:Fisioterapeuta, formador y dinamizador de equipos','TEL;TYPE=CELL:+34640761701','EMAIL:contacto@juanlurodriguez.com','URL:https://juanlurodriguez.com','NOTE:Bienestar corporativo, formaciones bonificables FUNDAE, team building y wellness days. Presencial en Islas Baleares y Andalucía. Online para toda España.','END:VCARD'].join('\n');const blob=new Blob([vcard],{type:'text/vcard;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='Juanlu-Rodriguez-Bienestar-Corporativo.vcf';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url)}
+  /* ── MOBILE MENU ── */
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    menuBtn.textContent = open ? '×' : '☰';
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuBtn.textContent = '☰';
+    });
+  });
+
+  /* ── SCROLL REVEAL ── */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  /* ── SAVE CONTACT (vCard) ── */
+  function saveContact() {
+    const vcard = [
+      'BEGIN:VCARD',
+      'VERSION:3.0',
+      'N:Rodriguez;Juanlu;;;',
+      'FN:Juanlu Rodriguez',
+      'ORG:Bienestar Corporativo',
+      'TITLE:Fisioterapeuta, formador y dinamizador de equipos',
+      'TEL;TYPE=CELL:+34640761701',
+      'EMAIL:contacto@juanlurodriguez.com',
+      'URL:https://juanlurodriguez.com',
+      'NOTE:Bienestar corporativo, formaciones bonificables FUNDAE, team building y wellness days. Presencial en Islas Baleares y Andalucía. Online para toda España.',
+      'END:VCARD'
+    ].join('\n');
+
+    const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href     = url;
+    a.download = 'Juanlu-Rodriguez-Bienestar-Corporativo.vcf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
 </script>
+
 </body>
 </html>
